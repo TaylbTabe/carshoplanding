@@ -1,0 +1,11 @@
+Model Information:
+* title:	Imperial ATAT
+* source:	https://sketchfab.com/3d-models/imperial-atat-29b9cd60465944db805d1a4289c76b7a
+* author:	gazthing (https://sketchfab.com/gazthing)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Imperial ATAT" (https://sketchfab.com/3d-models/imperial-atat-29b9cd60465944db805d1a4289c76b7a) by gazthing (https://sketchfab.com/gazthing) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('fonts/ImpactLTStd.eot');
+    src: local('Impact LT Std Roman'), local('ImpactLTStd'),
+        url('fonts/ImpactLTStd.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ImpactLTStd.woff2') format('woff2'),
+        url('fonts/ImpactLTStd.woff') format('woff'),
+        url('fonts/ImpactLTStd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat-Light.woff') format('woff'),
+        url('fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0E0E0F;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.header {
+    background: url('img/bg.png') no-repeat 50% 50%,
+    linear-gradient(0deg, #0F0D0E 2.06%, rgba(15, 13, 14, 0) 103.55%);
+    background-size: cover;
+}
+
+.nav-section {
+    display: grid;
+    grid-template-columns: 360px 1fr 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 40%;
+}
+
+.nav {
+    width: 50%;
+    justify-self: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-item a{
+    padding: 10px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #676767;
+    text-decoration: none;
+}
+
+.nav-item .selected {
+    color: white;
+}
+
+.last-item {
+    margin-right: 0;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.shop {
+    border-right: 1px solid #676767;
+}
+
+.car-title {
+    font-family: 'Impact', Arial, sans-serif;
+    font-size: 80px;
+    line-height: 170px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bg-text {
+    padding: 80px;
+    background: url('img/bg-text.png') no-repeat 50% 50%;
+    background-size: 100%;
+}
+
+.car-description {
+    color: #C2C2C2;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: -45px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    height: 100%;
+}
+
+.car-selector {
+    justify-self: center;
+    align-self: center;
+    display: inline-block;
+    width: 30px;
+    height: 150px;
+    padding: 0;
+    color: C2C2C2;
+    font-size: 14px;
+}
+
+.car-selector input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.car-selector input:focus {
+    outline: none; 
+}
+
+.car-selector input::-ms-track {
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+.car-selector input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -10px; 
+    background: url('img/slider.svg') no-repeat 50% 50%;
+    background-size: 100%;
+    width: 100%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.car-selector input::-moz-range-thumb {
+    background: url('img/slider.svg') no-repeat 50% 50%;
+    background-size: 100%;
+    width: 100%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.car-selector input::-ms-thumb {
+    background: url('img/slider.svg') no-repeat 50% 50%;
+    background-size: 100%;
+    width: 100%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.car-selector input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.5px;
+    cursor: pointer;
+    border: 0.1px solid #676767;
+}
+  
+.car-selector input::-moz-range-track {
+    width: 100%;
+    height: 0.5px;
+    cursor: pointer;
+    border: 0.1px solid #676767;
+}
+
+.car-selector input::-ms-track {
+    width: 100%;
+    height: 0.5px;
+    cursor: pointer;
+    border: 0.1px solid #676767;
+}
+
+.car-selector input {
+    width: 130px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 50px 50px;
+    transform: rotate(-90deg);
+    margin-top: 30px;
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    background: transparent;
+}
+
+.car-selector > span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.car-selector > span:hover {
+    cursor: help;
+}
+
+.car {
+    display: block;
+    width: 100%;
+}
+
+.model {
+    display: none;
+    margin-left: 12%;   
+    width: 70%;
+    height: 70%;
+    --poster-color: transparent;
+    --progress-bar-color: transparent;
+    --progress-mask: transparent;
+}
+
+.visible {
+    display: block;
+}
+
+.features {
+    align-self: center;
+    text-align: center;
+    width: 200px;
+}
+
+.feature-item {
+    display: block;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #676767;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+.feature-item:hover {
+    cursor: pointer;
+}
+
+.features input[type="radio"] {
+    display:none;   
+}
+
+.features input[type="radio"]:checked + span {
+    color: white;
+    font-weight: 400;
+}
+
+.experience {
+    background-color: #0F0D0E;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    padding-left: 135px;
+    padding-right: 135px;
+    position: relative;
+}
+
+.experience::before {
+    content: ""; 
+    position: absolute;
+    background: url('img/exp\ background.svg') no-repeat 0% 0%;
+    bottom: -250px;
+    left: 0px;
+    height: 700px;
+    width: 900px;
+}
+
+.exp-title {
+    color: #ffffff;
+    font-size: 55px;
+    line-height: 95px;
+    font-family: 'Impact', 'Arial', sans-serif;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.exp-title h2 {
+    margin-top: 0;
+} 
+
+.dude {
+    background: linear-gradient(
+       180deg, #0F0D0E 30%, #A394FE 30%
+    );
+    margin-bottom: 30px;
+}
+
+.def {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+    width: 350px;
+    height: 100px;
+    margin-bottom: 40px;
+    
+}
+
+.learn-button {
+    text-align: center;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 31px 19px 24px;
+    background-color: #ff0000;
+    position: relative;
+}
+
+.learn-button > img {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+.rotating-car {
+    background: url('img/circle.svg') no-repeat 50% 55%;
+    background-size: 570px;
+    width: 600px;
+    margin: 0px 25px 0px 25px;
+    position: relative;
+}
+
+.rotating-car img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 92px;
+    padding-right: 92px;
+    position: relative;
+    z-index: 2;
+}
+
+.arrow-back {
+    background: url('img/Vector\ 10.svg') no-repeat;
+    width: 70px;
+    height: 140px;
+    position: absolute;
+    top: 210px;
+    right: 11px;
+    display: block;
+    z-index: 1;
+}
+
+.numbers {
+    color:#ffffff;
+    margin-top: 220px;
+
+
+}
+
+.yellow {
+    color:#ffc700;
+}
+
+.turquoise {
+    color:#00ffd1;
+}
+
+.magenta {
+    color:#ff00e5;
+}
+
+.numbers dd {
+    font-size: 19px;
+    line-height: 30px;
+    margin-inline-start: 0px;
+}
+
+.numbers dt {
+    font-size: 50px;
+    line-height: 70px;
+    font-family: 'Impact', 'Arial', sans-serif;
+}
+
+.exp-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.invisible {
+    display: none;
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chevrolet Camaro
+* source:	https://sketchfab.com/3d-models/chevrolet-camaro-a10256dc1bf44a328a37af23d86568e0
+* author:	louweeeeee___ (https://sketchfab.com/Louweee___)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chevrolet Camaro" (https://sketchfab.com/3d-models/chevrolet-camaro-a10256dc1bf44a328a37af23d86568e0) by louweeeeee___ (https://sketchfab.com/Louweee___) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

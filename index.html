@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shop Auto</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-section">
+            <div class="logo">
+                <img src="img/logo.svg" alt="ShopAuto">
+            </div>
+            <div class="nav">
+                <ul class="nav-items">
+                    <li class="nav-item selected">
+                        <a href="#" class="selected">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><img class="icon shop" src="img/shop.svg" alt="shop"></a><a href="#"><img class="icon search" src="img/search.svg" alt="search"></a>
+            </div>
+        </div>
+        <div class="car-section">
+            <div class="car-title">
+                <h1>Chevrolet <span class="bg-text">Camaro</span></h1>
+            </div>
+            <div class="car-description">
+                <p>The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car. It first went on sale on September 29, 1966, for the 1967 model year </p>
+            </div>
+            <div class="car-grid">
+                <div class="car-selector">
+                    <span><output class="car-number-output">1</output>/3</span>
+                    <input type="range" name="car-number" id="car-number" min="1" max="3" value="1" step="1">
+                </div>
+                <div class="car">
+                    <model-viewer src="assets/camaro/scene.gltf" alt="Camaro" auto-rotate disable-zoom camera-controls ar ios-src="assets/camaro/scene.gltf" poster="img/loading.gif" interaction-prompt="none" camera-orbit="0deg 80deg 80%" min-camera-orbit="Infinity 75deg 0%" max-camera-orbit="Infinity 85deg auto" orbit-sensitivity="0.6" shadow-intensity="5" shadow-softness="1" class="model model-1 visible"></model-viewer>
+                    <model-viewer src="assets/audi/scene.gltf" alt="Camaro" auto-rotate disable-zoom camera-controls ar ios-src="assets/audi/scene.gltf" poster="img/loading.gif" interaction-prompt="none" camera-orbit="0deg 80deg 80%" min-camera-orbit="Infinity 75deg 0%" max-camera-orbit="Infinity 85deg auto" orbit-sensitivity="0.6" shadow-intensity="5" shadow-softness="1" class="model model-2"></model-viewer>
+                    <model-viewer src="assets/atat/scene.gltf" alt="Camaro" auto-rotate disable-zoom camera-controls ar ios-src="assets/atat/scene.gltf" poster="img/loading.gif" interaction-prompt="none" camera-orbit="0deg 80deg 110%" min-camera-orbit="Infinity 75deg 0%" max-camera-orbit="Infinity 85deg auto" orbit-sensitivity="0.6" shadow-intensity="5" shadow-softness="1" class="model model-3"></model-viewer>
+                    <model-viewer src="assets/neco-arc/scene.gltf" alt="Camaro" auto-rotate disable-zoom camera-controls ar ios-src="assets/audi/scene.gltf" poster="img/loading.gif" interaction-prompt="none" camera-orbit="90deg 80deg 110%" min-camera-orbit="Infinity 75deg 0%" max-camera-orbit="Infinity 85deg auto" orbit-sensitivity="0.6" shadow-intensity="5" shadow-softness="1" class="model model-4"></model-viewer>
+                </div>
+                <div class="features">
+                    <label class="feature-item">
+                        <input type="radio" name="feature" id="feature" checked>
+                        <span>Design</span>
+                    </label>
+                    <label class="feature-item">
+                        <input type="radio" name="feature" id="feature">
+                        <span>Comfort</span>
+                    </label>
+                    <label class="feature-item">
+                        <input type="radio" name="feature" id="feature">
+                        <span>Safety</span>
+                    </label>
+                    <label class="feature-item">
+                        <input type="radio" name="feature" id="feature">
+                        <span>Spaces</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="experience">
+            <div class="exp-title">
+                <h2>We are ensuring the best customer experience</h2>
+            </div>
+                <div class="exp-grid"><div class="definition">
+                    <img src="img/dude.png" class="dude" width="237" height="287">
+                    <div class="def">
+                        A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of cars
+                    </div>
+                    <a class="learn-button" href="https://www.anekdot.ru/">
+                        Learn More
+                        <img src="img/arrow.svg" alt="arrow">
+                    </a>
+                </div>
+                <div class="rotating-car">
+                    <img src="img/rotating car.svg" alt="rotating car" width="415px" height="788px" id="rotator">
+                    <div class="arrow-back"></div>
+                </div>
+                <div class="numbers">
+                    <dl>
+                        <dt class="yellow">
+                            260
+                        </dt>
+                        <dd>
+                            Unique Vehicles
+                        </dd>
+                        <dt class="turquoise">
+                            180k
+                        </dt>
+                        <dd>
+                            Annual Visitor
+                        </dd>
+                        <dt class="magenta">
+                            190k
+                        </dt>
+                        <dd>
+                            Exhibit Space
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="propeller.js"></script>
+    <script>
+        let car = document.getElementById('rotator');
+        let prop = new Propeller(car, {
+    inertia: 0.99,
+    });
+    
+    let arrow = document.querySelector('.arrow-back');
+    
+
+    let rect = car.getBoundingClientRect();
+        var center = {
+            x: rect.left + (rect.width / 2),
+            y: rect.top + (rect.height / 2),
+        };
+        
+
+    car.onmousedown = function () {
+        arrow.classList.add('invisible');
+        console.log(center);
+    }
+    car.onmouseup = function () {
+        arrow.classList.remove('invisible');
+    }
+    </script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</body>
+
+</html>
